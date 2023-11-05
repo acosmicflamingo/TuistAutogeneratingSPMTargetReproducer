@@ -40,41 +40,50 @@ let package = Package(
             name: "SPMPackage"),
         .testTarget(
             name: "SPMPackageTests",
-            dependencies: ["SPMPackage"]),
+            dependencies: ["SPMPackage"],
+            path: "IntegrationTests/SPMPackageTests"),
         .target(
             name: "SPMPackage2"),
         .testTarget(
             name: "SPMPackage2Testss",
-            dependencies: ["SPMPackage2"]),
+            dependencies: ["SPMPackage2"],
+            path: "IntegrationTests/SPMPackage2Testss"),
         .target(
             name: "SPMPackage3"),
         .testTarget(
             name: "SPMPackage3IntegrationTests",
-            dependencies: ["SPMPackage3"]),
+            dependencies: ["SPMPackage3"],
+            path: "IntegrationTests/SPMPackage3IntegrationTests"),
         .target(
             name: "SPMPackage4"),
         .testTarget(
-            name: "SPMPackage4UITests"),
+            name: "SPMPackage4UITests",
+            dependencies: ["SPMPackage4"],
+            path: "IntegrationTests/SPMPackage4UITests"),
         .target(
             name: "SPMPackage5"),
         .testTarget(
             name: "SPMPackage5SnapshotTests",
-            dependencies: ["SPMPackage5"]),
+            dependencies: ["SPMPackage5"],
+            path: "IntegrationTests/SPMPackage5SnapshotTests"),
         .target(
             name: "SPMPackage6"),
         .testTarget(
             name: "SPMPackage6Framework",
-            dependencies: ["SPMPackage6"]),
+            dependencies: ["SPMPackage6"],
+            path: "IntegrationTests/SPMPackage6Framework"),
         .target(
             name: "SPMPackage7"),
         .testTarget(
             name: "SPMPackage7App",
-            dependencies: ["SPMPackage7"]),
+            dependencies: ["SPMPackage7"],
+            path: "IntegrationTests/SPMPackage7App"),
         .target(
             name: "SPMPackage8"),
         .testTarget(
             name: "SPMPackage8Tests",
-            dependencies: ["SPMPackage8"]),
+            dependencies: ["SPMPackage8"],
+            path: "IntegrationTests/SPMPackage8Tests"),
         .target(
             name: "SPMPackageNoTest"),
     ]
