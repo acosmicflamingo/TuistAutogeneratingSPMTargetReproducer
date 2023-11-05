@@ -17,6 +17,9 @@ let package = Package(
             name: "SPMPackage3",
             targets: ["SPMPackage3"]),
         .library(
+            name: "SPMPackage4",
+            targets: ["SPMPackage4"]),
+        .library(
             name: "SPMPackageNoTest",
             targets: ["SPMPackageNoTest"]),
     ],
@@ -36,6 +39,11 @@ let package = Package(
         .testTarget(
             name: "SPMPackage3IntegrationTests",
             dependencies: ["SPMPackage3"]),
+        .target(
+            name: "SPMPackage4"),
+        .testTarget(
+            name: "SPMPackage4UITests",
+            dependencies: ["SPMPackage4"]),
         .target(
             name: "SPMPackageNoTest"),
     ]
